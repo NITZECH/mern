@@ -12,10 +12,6 @@ dotenv.config({path: './config.env'});
 require('./db/conn.js')
 const PORT = process.env.PORT;
 
-// mongodb user = nitzech pw = 123ni.te
-
-//mongodb+srv://nitzech:<password>@cluster0.mb1mx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
 
 
 const middleware = (req, res, next) => {
