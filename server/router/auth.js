@@ -143,6 +143,12 @@ if (userLogin){
     
    token = await  userLogin.generateAuthToken();   
   console.log(token);
+
+  res.cookie('jwtoken', token, {
+    expires: new Date(Date.now() + 258920000000 ),
+    httpOnly: true
+  });
+
   if (!isMatch) {
     res.status(400).json({
       error: "User error, Invalid credentials"
