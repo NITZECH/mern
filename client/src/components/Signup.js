@@ -1,10 +1,11 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
+import { NavLink } from 'react-router-dom'
 const Signup = () => {
 return (
 <>
    
-    <section className="signup">
+<section className="signup">
         <div className="container mt-5 mx-auto">
             <div className="signup-content">
                 <div className="signup-form">
@@ -27,7 +28,7 @@ return (
                         </div>
                         <div className="form-group">
                             <label htmlFor="work"><i className="zmdi zmdi-slideshow material-icons-name" />
-                            </label><input type="text" name="work" id="work" autoComplete="off"
+         </label><input type="text" name="work" id="work" autoComplete="off"
                                 placeholder="Your Profession"  />
                         </div>
                         <div className="form-group"><label htmlFor="password"><i
@@ -42,14 +43,14 @@ return (
                                 placeholder="Confirm Your Password"  />
                         </div>
                         <div className="form-group form-button"><input type="submit" name="signup" id="signup"
-                                className="form-submit" defaultValue="register" /></div>
+                                className="form-submit" value="Sign Up" /></div>
                     </form>
                 </div>
                 <div className="signup-image">
                     <figure><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_wd1udlcz.json"  background="transparent"  speed="0.7"   loop autoplay></lottie-player>
 </figure> <h1
                         className="signup-image-link" >Already Registered?</h1>
-                       <a class="btn btn-lg btn-outline-primary" href="/login" role="button">Click Here</a>
+                       <NavLink class="btn btn-lg btn-outline-primary" to="/login" role="button">Login</NavLink>
                        </div>    
             </div>
         </div>

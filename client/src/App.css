@@ -224,7 +224,7 @@ body {
 }
 
 .signup-image {
-  margin: 0 55px
+  margin: 0 35px
 }
 
 .form-title {
@@ -234,7 +234,7 @@ body {
 }
 
 .signup-image {
-  width: 400px;
+  width: 300px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -527,11 +527,21 @@ label.valid:after {
 
 .signin-form {
   margin-right: 90px;
-  margin-left: 80px
+  margin-left: 80px;
+  
+}
+.sign-in{
+  position: relative;
+}
+.sign-inform{
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .signin-image {
-  margin-left: 110px;
+  max-width: 300px;
+  margin-left: 90px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
