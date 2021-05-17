@@ -405,17 +405,7 @@ input[type=checkbox]:not(old):checked+label>span:before {
   width: auto
 }
 
-label {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  color: #222
-}
+
 
 .label-has-error {
   top: 22%
@@ -990,17 +980,7 @@ label.valid:after {
       margin-bottom: 0
   }
 
-  label {
-      position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      color: #222
-  }
+ 
 }
 
 @media only screen and (max-width: 767px) {
