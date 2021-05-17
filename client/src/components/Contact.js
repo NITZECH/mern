@@ -1,9 +1,10 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Contact = () => {
     return (
         <div>
-            <p> WLcoem contac </p>
+         
             
         </div>
     )
