@@ -12,9 +12,9 @@ return (
                 </div>
                 <div className="col-md-6">
                     <div class="profile-head">
-                        <h5>Vinod thapa</h5>
+                        <h5>Nitesh Devkota</h5>
                         <h6>Web developer</h6>
-                        <p className='profile-rating mt-3 mb-5'>RANKINGS: <span> 1/ 10</span> </p>
+                        <p className='profile-rating mt-3 mb-5'>RANKINGS: <span> 7/ 10</span> </p>
 
                         <ul className="nav nav-tabs" role='tablist'>
                             <li className="nav-item">
@@ -32,7 +32,7 @@ return (
 
                 </div>
                 <div className="col-md-2">
-                    <input type="text" name='btnAddMore' className="profile-edit-btn" value='Edit Profile' />
+                  <button className="btn btn-lg btn-outline-dark" name='btnAddMore'>Edit Profile</button>
                 </div>
                 <div className="row">
                     {/* left side url */}
@@ -97,7 +97,7 @@ return (
 
                        {/* profile tab  */}
 
-                       <div className="tab-pane fade " id='profile' role='tabpanel'   aria-labelledby='profile-tab'>
+                       <div className="tab-pane fade collapse " id='profile' role='tabpanel'   aria-labelledby='profile-tab'>
 
 <div className="row">
     <div className="col-md-6">

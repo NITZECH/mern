@@ -21,12 +21,12 @@ const Login = () => {
                     <form method="POST" className="register-form" id="register-form">
                       
                         <div className="form-group">
-                            <label htmlFor="email"><i className="zmdi zmdi-email material-icons-name" />
+                            <label className='label-form' htmlFor="email"><i className="zmdi zmdi-email material-icons-name" />
                             </label><input type="email" name="email" id="email" autoComplete="off"
                                 placeholder="Your Email"  /></div>
                       
                        
-                        <div className="form-group"><label htmlFor="password"><i
+                        <div className="form-group"><label className='label-form' htmlFor="password"><i
                                     className="zmdi zmdi-lock material-icons-name" />
                             </label>
                             <input type="password" name="password" id="password" autoComplete="off"
