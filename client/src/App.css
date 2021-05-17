@@ -299,7 +299,8 @@ figure {
 .form-group {
   position: relative;
   margin-bottom: 25px;
-  overflow: hidden
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .form-group:last-child {
@@ -512,7 +513,9 @@ label.valid:after {
   -webkit-transform: scale(1.3) translateZ(0);
   transform: scale(1.3) translateZ(0)
 }
-
+.zmdi{
+  padding: 5px
+}
 .zmdi-facebook {
   background: #3b5998
 }

@@ -37,20 +37,20 @@ return (
                             <input type="password" name="password" id="password" autoComplete="off"
                                 placeholder="Your Password"  />
                         </div>
-                        <div className="form-group"><label htmlFor="cpassword"><i
-                                    className="zmdi zmdi-lock material-icons-name" />
+                        <div className="form-group "><label htmlFor="cpassword"><i
+                                    className="zmdi zmdi-lock material-icons-name " />
                             </label><input type="password" name="cpassword" id="cpassword" autoComplete="off"
                                 placeholder="Confirm Your Password"  />
                         </div>
-                        <div className="form-group form-button"><input type="submit" name="signup" id="signup"
-                                className="form-submit" value="Sign Up" /></div>
+                        <div className="form-group d-flex align-items-center justify-content-center"><input clas type="submit" name="signup" id="signup"
+                                className="form-submit btn btn-outline-dark  btn-lg" value="Sign Up" /></div>
                     </form>
                 </div>
                 <div className="signup-image">
                     <figure><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_wd1udlcz.json"  background="transparent"  speed="0.7"   loop autoplay></lottie-player>
 </figure> <h1
                         className="signup-image-link" >Already Registered?</h1>
-                       <NavLink class="btn btn-lg btn-outline-primary" to="/login" role="button">Login</NavLink>
+                       <NavLink class="btn btn-lg btn-outline-dark" to="/login" role="button">Login</NavLink>
                        </div>    
             </div>
         </div>

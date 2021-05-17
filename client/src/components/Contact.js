@@ -74,8 +74,8 @@ placeholder='Your Phone Number' required='true' />
     <textarea placeholder='Your Message' className='text_field contact_form_message' id='' cols='30' rows='10'>
         </textarea> 
 </div>
-<div className="contact_form_button">
-    <button className="btn btn-lg btn-outline-secondary" type='submit'> Send Message</button>
+<div className="contact_form_button d-flex align-items-center justify-content-center">
+    <button className="btn btn-lg btn-outline-dark" type='submit'> Send Message</button>
 </div>
 
                          </form>
