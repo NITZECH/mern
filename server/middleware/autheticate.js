@@ -8,7 +8,7 @@ try{
 const token = req.cookies.token;
 const verifyToken = jwt.verify( token, process.env.SECRET_KEY);
 
-const rootUser = await User.findOne({ _id: verifyToken._id , "tokens : token ": token});
+const rootUser = await User.findOne({ _id: verifyToken._id , "token.token ": token});
 
 if (!rootUser) { throw new Error('User Not Found')}
 
