@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 
 require('../db/conn');
 const User = require('../model/userSchema');
+const autheticate = require('../middleware/Autheticate');
 
 router.get('/', (req, res) => {
   res.send(`Hello world from the router server`)
@@ -121,7 +122,12 @@ if (userLogin){
   }
 })
 
+//about us page route with middleware
+router.get('/about', autheticate, (req, res) => {
+  res.send(`Hello world from the About server`);
+  console.log('Here is my about');
 
+});
 
 module.exports = router;
 

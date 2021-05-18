@@ -19,11 +19,6 @@ const PORT = process.env.PORT;
 
 // const User = require('./model/userSchema')
 
-const middleware = (req, res, next) => {
-    console.log('Here is my middleware');
-    next();
-}
-
 
 app.get('/', (req, res) => {
     res.send(`Hello world from the backend server`)
@@ -33,11 +28,11 @@ app.get('/home', (req, res) => {
     res.send(`Hello world from the Home server`)
 });
 
-app.get('/about', middleware, (req, res) => {
-    res.send(`Hello world from the About server`);
-    console.log('Here is my about');
+// app.get('/about', middleware, (req, res) => {
+//     res.send(`Hello world from the About server`);
+//     console.log('Here is my about');
 
-});
+// });
 
 app.get('/services', (req, res) => {
     res.send(`Hello world from the services server`)
