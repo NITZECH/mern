@@ -74,7 +74,7 @@ router.post('/register', async (req, res) => {
 
 
 //login route
-router.post('/login', async (req, res) => {
+router.post('/signin', async (req, res) => {
   try {let token;
     const {
       email,
