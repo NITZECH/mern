@@ -40,7 +40,7 @@ if(res.status === 400 || !data){
 
 </figure> <h1
                         className="signin-image-link" >New here?</h1>
-                       <NavLink class="btn btn-lg btn-outline-primary" to="/signup" role="button">Sign Up</NavLink>
+                       <NavLink className="btn btn-lg btn-outline-primary" to="/signup" role="button">Sign Up</NavLink>
                        </div>   
                 <div className="signin-form">
                     <h2 className="form-title mx-auto" >Sign In </h2>

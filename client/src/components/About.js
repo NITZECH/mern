@@ -1,17 +1,46 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useHistory } from 'react-router';
 
 const About = () => {
+const history = useHistory();
+    const callAboutPage = async () => {
+try{
+const res = await fetch('/about', {
+method: "GET",
+headers: {
+    Accept: "application/json",
+    'Content-Type': 'application/json'
+}, credentials: 'include'
+});
+
+const data = await res.json();
+console.log(data);
+
+if (!res.status === 200){
+    throw new Error(res.error);
+}
+
+} catch(err){
+    console.log(err);
+    history.push('/login');
+    
+}
+ }
+    useEffect(() => {
+        callAboutPage();
+ });
+
 return (
 <>
     <div className="container emp-profile">
-        <form>
+        <form method="GET">
             <div className="row">
                 <div className="col-md-4 profile-img">
                     <img src="https://scontent.fpkr2-1.fna.fbcdn.net/v/t1.6435-1/c122.257.968.968a/s240x240/174440514_2816772958540496_4707193922734414668_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=7206a8&_nc_ohc=E1vZCxyCsQsAX8s6MeK&_nc_ht=scontent.fpkr2-1.fna&tp=28&oh=5b1b56a8d5c8a9aa95e924282e04cb36&oe=60C8BFF7"
                         alt="" />
                 </div>
                 <div className="col-md-6">
-                    <div class="profile-head">
+                    <div className="profile-head">
                         <h5>Nitesh Devkota</h5>
                         <h6>Web developer</h6>
                         <p className='profile-rating mt-3 mb-5'>RANKINGS: <span> 7/ 10</span> </p>

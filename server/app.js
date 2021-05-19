@@ -1,5 +1,6 @@
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const cookieParser = require('cookie-parser');
 
 
 const {
@@ -41,3 +42,5 @@ app.get('/services', (req, res) => {
 app.listen(PORT, () => {
     console.log(` running at ${PORT}`)
 })
+
+app.use(cookieParser());

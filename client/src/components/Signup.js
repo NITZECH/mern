@@ -124,7 +124,7 @@ return (
                             background="transparent" speed="0.7" loop autoplay></lottie-player>
                     </figure>
                     <h1 className="signup-image-link">Already Registered?</h1>
-                    <NavLink class="btn btn-lg btn-outline-dark" to="/login" role="button">Login</NavLink>
+                    <NavLink className="btn btn-lg btn-outline-dark" to="/login" role="button">Login</NavLink>
                 </div>
             </div>
         </div>

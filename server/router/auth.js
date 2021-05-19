@@ -3,9 +3,13 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+
+// const cookieParser = require('cookie-parser');
+// router.use(cookieParser());
+
 require('../db/conn');
 const User = require('../model/userSchema');
-const autheticate = require('../middleware/Autheticate');
+const Autheticate = require('../middleware/autheticate');
 
 router.get('/', (req, res) => {
   res.send(`Hello world from the router server`)
@@ -123,8 +127,8 @@ if (userLogin){
 })
 
 //about us page route with middleware
-router.get('/about', autheticate, (req, res) => {
-  res.send(`Hello world from the About server`);
+router.get('/about', Autheticate, (req, res) => {
+  res.send(req.rootUser);
   console.log('Here is my about');
 
 });
