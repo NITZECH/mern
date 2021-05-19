@@ -13,6 +13,8 @@ dotenv.config({path: './config.env'});
 require('./db/conn.js')
 
 app.use(express.json());
+app.use(cookieParser());
+
 
 app.use(require('./router/auth'));
 
@@ -43,4 +45,3 @@ app.listen(PORT, () => {
     console.log(` running at ${PORT}`)
 })
 
-app.use(cookieParser());

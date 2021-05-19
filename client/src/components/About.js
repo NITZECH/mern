@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 import { useHistory } from 'react-router';
 
 const About = () => {
+
 const history = useHistory();
+
     const callAboutPage = async () => {
 try{
 const res = await fetch('/about', {
@@ -26,7 +28,8 @@ if (!res.status === 200){
     
 }
  }
-    useEffect(() => {
+
+ useEffect(() => {
         callAboutPage();
  });
 
