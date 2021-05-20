@@ -1,38 +1,41 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router';
 
 const About = () => {
-
-const history = useHistory();
+   
+    const history = useHistory();
+    const [userData, setUserData] = useState({});
 
     const callAboutPage = async () => {
-try{
-const res = await fetch('/about', {
-method: "GET",
-headers: {
-    Accept: "application/json",
-    'Content-Type': 'application/json'
-}, credentials: 'include'
-});
+        try {
+            const res = await fetch('/about', {
+                method: "GET",
+                headers: {
+                    "Accept" : "application/json",
+                    "Content-Type": "application/json"
+                },
+                credentials: "include"
+            });
 
-const data = await res.json();
-console.log(data);
+            const data = await res.json;
+            console.log(data);
+            setUserData(data);
 
-if (!res.status === 200){
-    throw new Error(res.error);
-}
+            if (!res.status === 200) {
+                const error = new Error(res.error);
+                throw error;
+            }
 
-} catch(err){
-    console.log(err);
-    history.push('/login');
-    
-}
- }
+        } catch (err) {
+            console.log(err);
+            history.push('/login');
+            
+        }
+    }
 
- useEffect(() => {
+    useEffect(() => {
         callAboutPage();
- });
-
+    }, []);
 return (
 <>
     <div className="container emp-profile">
