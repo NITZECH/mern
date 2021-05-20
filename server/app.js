@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser')
 
 
 const {
@@ -20,7 +20,7 @@ app.use(require('./router/auth'));
 
 const PORT = process.env.PORT;
 
-// const User = require('./model/userSchema')
+ const User = require('./model/userSchema')
 
 
 app.get('/', (req, res) => {
